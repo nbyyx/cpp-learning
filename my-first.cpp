@@ -1,9 +1,12 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!" << endl;
-    cout << "Hello C++!" << endl;
-    return 0;
+    char ch = 'a';
+    int a = ch;
+    cout << a << endl;
+
 }
+
