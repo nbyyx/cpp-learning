@@ -1,15 +1,12 @@
 #include <iostream>
 #include <iomanip>
+#include <cstring>
 using namespace std;
 
 int main() {
-    double a = 1.23456778;
-    cout << a << endl;
-    cout << scientific << a << endl;
-
-    cout << fixed << setprecision(5) << a << endl;
-    cout << scientific << a << endl;
-
+    char str[8] = "你好";
+    cout << str << endl;
+    cout << "字符串长度为：" << strlen(str) << endl;
 
     return 0;
 }
