@@ -4,9 +4,13 @@
 using namespace std;
 
 int main() {
-    char str[8] = "你好";
-    cout << str << endl;
-    cout << "字符串长度为：" << strlen(str) << endl;
+    char charry[5];
+    char charry2[5];
+    cin.getline(charry, 5);
+    cout << "you entered is " << charry << endl;
+    cin.ignore(100, '\n');
+    cin.getline(charry2, 5);
+    cout << "you entered is " << charry2 << endl;
 
     return 0;
 }
