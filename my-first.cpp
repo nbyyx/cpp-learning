@@ -1,16 +1,21 @@
 #include <iostream>
-#include <iomanip>
-#include <cstring>
-using namespace std;
 
-int main() {
-    char charry[5];
-    char charry2[5];
-    cin.getline(charry, 5);
-    cout << "you entered is " << charry << endl;
-    cin.ignore(100, '\n');
-    cin.getline(charry2, 5);
-    cout << "you entered is " << charry2 << endl;
+struct inflatable
+{
+    char name[20];
+    float volume;
+    double price;
+};
+
+int main()
+{
+    using namespace std;
+    enum spectrum {red, blue};
+
+    int a = red;
+    spectrum yellow = spectrum(red + blue);
+    cout << a;
+    cout << yellow;
 
     return 0;
 }
