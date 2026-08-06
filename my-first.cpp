@@ -1,21 +1,26 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
-struct inflatable
+
+struct stu
 {
-    char name[20];
-    float volume;
-    double price;
+    string name;
+    int num;
 };
 
 int main()
 {
-    using namespace std;
-    enum spectrum {red, blue};
-
-    int a = red;
-    spectrum yellow = spectrum(red + blue);
-    cout << a;
-    cout << yellow;
+    stu s1 = {"yyx", 12};
+    stu s2 = {"wlg", 13};
+    stu s3 = {"sss", 14};
+    stu* p[3] = {&s1, &s2, &s3};
+    stu** pp = p;
+    cout << (*pp)->name; 
+    cout << endl;
+    cout << pp[1]->name << endl;
+    cout << p[0]->name << endl;
+    
 
     return 0;
 }
